@@ -93,7 +93,7 @@ export default {
         // here show the msg to the user
         console.log(error);
       } finally {
-        this.category.name = this.category.description = this.image = "";
+        this.category.name = this.category.description = this.category.image = "";
       }
     },
   },
