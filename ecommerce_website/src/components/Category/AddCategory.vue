@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h3 class="pt-3">Add Categories</h3>
+        <h3 class="pt-3"></h3>
       </div>
     </div>
     <div class="row">
@@ -68,11 +68,11 @@ export default {
     async addCategory() {
       // return if all the mandatory feilds are not filled
       if (this.isFormCoplete) {
-       Swal.fire({
-            icon: "error",
-            title: "Incomplete Form",
-            text: "Please fill all the mandatory fields",
-          });
+        Swal.fire({
+          icon: "error",
+          title: "Incomplete Form",
+          text: "Please fill all the mandatory fields",
+        });
         return;
       }
 
@@ -82,7 +82,7 @@ export default {
           this.category
         );
         if (categoryRes.status === 201) {
-            Swal.fire({
+          Swal.fire({
             icon: "success",
             title: "Category added successfully",
             showConfirmButton: false,
@@ -93,7 +93,10 @@ export default {
         // here show the msg to the user
         console.log(error);
       } finally {
-        this.category.name = this.category.description = this.category.image = "";
+        this.category.name =
+          this.category.description =
+          this.category.image =
+            "";
       }
     },
   },
