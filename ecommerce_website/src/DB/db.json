@@ -1,46 +1,212 @@
 {
   "category": [
     {
-      "name": "Mobile",
-      "description": "Realme 11",
-      "image": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/l/8/d/-original-imagqadpnygfnn2v.jpeg?q=70",
-      "id": 2
-    },
-    {
-      "name": "Mobile",
-      "description": "SAMSUNG ",
-      "image": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/8/c/x/-original-imagmg6gy7x3xwcg.jpeg?q=70",
-      "id": 3
-    },
-    {
       "name": "Electronics",
-      "description": "Electronics items",
-      "image": "https://rukminim2.flixcart.com/image/832/832/km2clu80/washing-machine-new/f/a/1/t62cgn-crystal-62-onida-original-imagffsh5zugj2gg.jpeg?q=70",
-      "id": 4
+      "description": "Browse a wide range of electronic products.",
+      "image": "https://img.freepik.com/premium-vector/gadgets-electronic-large-set_146957-836.jpg?w=1060",
+      "id": 1,
+      "products": [
+        {
+          "id": 101,
+          "name": "Smartphone",
+          "description": "Stay connected with the latest smartphones.",
+          "image": "https://img5.gadgetsnow.com/gd/images/products/additional/large/G390846_View_1/mobiles/smartphones/apple-iphone-14-pro-1-tb-deep-purple-6-gb-ram-.jpg"
+        },
+        {
+          "id": 102,
+          "name": "Laptop",
+          "description": "Enhance productivity with powerful laptops.",
+          "image": "https://example.com/laptop.jpg"
+        },
+        {
+          "id": 103,
+          "name": "Headphones",
+          "description": "Enjoy crystal-clear audio with premium headphones.",
+          "image": "https://example.com/headphones.jpg"
+        }
+      ]
     },
     {
-      "name": "sdg",
-      "description": "adsf",
-      "image": "asdf",
-      "id": 5
+      "name": "Home Appliances",
+      "description": "Make your home life easier with our appliances.",
+      "image": "https://p.turbosquid.com/ts-thumb/zW/mOOsGy/kmUxdurr/homeappliancescollection43dmodel000/jpg/1581411601/1920x1080/fit_q99/3a291cc4ed43be19cf7ac549b5eb7b2802444f54/homeappliancescollection43dmodel000.jpg",
+      "id": 2,
+      "products": [
+        {
+          "id": 104,
+          "name": "Refrigerator",
+          "description": "Keep your food fresh with energy-efficient refrigerators.",
+          "image": "https://example.com/refrigerator.jpg"
+        },
+        {
+          "id": 105,
+          "name": "Washing Machine",
+          "description": "Simplify laundry day with advanced washing machines.",
+          "image": "https://example.com/washing_machine.jpg"
+        },
+        {
+          "id": 106,
+          "name": "Microwave Oven",
+          "description": "Cook and reheat meals quickly with microwave ovens.",
+          "image": "https://example.com/microwave_oven.jpg"
+        }
+      ]
     },
     {
-      "name": "asdf",
-      "description": "adf",
-      "image": "adf",
-      "id": 6
+      "name": "Fashion",
+      "description": "Elevate your style with the latest fashion trends.",
+      "image": "https://example.com/fashion.jpg",
+      "id": 3,
+      "products": [
+        {
+          "id": 107,
+          "name": "Dresses",
+          "description": "Find the perfect dress for any occasion.",
+          "image": "https://example.com/dresses.jpg"
+        },
+        {
+          "id": 108,
+          "name": "Shoes",
+          "description": "Step out in style with fashionable shoes.",
+          "image": "https://example.com/shoes.jpg"
+        },
+        {
+          "id": 109,
+          "name": "Handbags",
+          "description": "Complete your look with designer handbags.",
+          "image": "https://example.com/handbags.jpg"
+        }
+      ]
     },
     {
-      "name": "asef",
-      "description": "adf",
-      "image": "aef",
-      "id": 7
+      "name": "Sports & Outdoors",
+      "description": "Get active and explore the outdoors with our gear.",
+      "image": "https://example.com/sports_outdoors.jpg",
+      "id": 4,
+      "products": [
+        {
+          "id": 110,
+          "name": "Bicycles",
+          "description": "Enjoy cycling with high-quality bicycles.",
+          "image": "https://example.com/bicycles.jpg"
+        },
+        {
+          "id": 111,
+          "name": "Tents",
+          "description": "Camp comfortably with durable camping tents.",
+          "image": "https://example.com/tents.jpg"
+        },
+        {
+          "id": 112,
+          "name": "Fitness Equipment",
+          "description": "Stay fit with a variety of fitness equipment.",
+          "image": "https://example.com/fitness_equipment.jpg"
+        }
+      ]
     },
     {
-      "name": "sdf",
-      "description": "sdf",
-      "image": "sdf",
-      "id": 8
+      "name": "Books",
+      "description": "Expand your knowledge with our diverse book collection.",
+      "image": "https://example.com/books.jpg",
+      "id": 5,
+      "products": [
+        {
+          "id": 113,
+          "name": "Fiction",
+          "description": "Dive into captivating fictional worlds.",
+          "image": "https://example.com/fiction.jpg"
+        },
+        {
+          "id": 114,
+          "name": "Non-Fiction",
+          "description": "Learn from informative non-fiction books.",
+          "image": "https://example.com/non_fiction.jpg"
+        },
+        {
+          "id": 115,
+          "name": "Cookbooks",
+          "description": "Master the culinary arts with our cookbooks.",
+          "image": "https://example.com/cookbooks.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Toys & Games",
+      "description": "Keep kids entertained with fun toys and games.",
+      "image": "https://example.com/toys_games.jpg",
+      "id": 6,
+      "products": [
+        {
+          "id": 116,
+          "name": "Board Games",
+          "description": "Enjoy quality family time with board games.",
+          "image": "https://example.com/board_games.jpg"
+        },
+        {
+          "id": 117,
+          "name": "Action Figures",
+          "description": "Collect action figures from your favorite franchises.",
+          "image": "https://example.com/action_figures.jpg"
+        },
+        {
+          "id": 118,
+          "name": "Educational Toys",
+          "description": "Promote learning through play with educational toys.",
+          "image": "https://example.com/educational_toys.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Furniture",
+      "description": "Furnish your home with stylish and functional furniture.",
+      "image": "https://example.com/furniture.jpg",
+      "id": 7,
+      "products": [
+        {
+          "id": 119,
+          "name": "Sofas",
+          "description": "Relax in comfort with our cozy sofas.",
+          "image": "https://example.com/sofas.jpg"
+        },
+        {
+          "id": 120,
+          "name": "Dining Tables",
+          "description": "Host gatherings with elegant dining tables.",
+          "image": "https://example.com/dining_tables.jpg"
+        },
+        {
+          "id": 121,
+          "name": "Bedroom Sets",
+          "description": "Create a dreamy bedroom with our bedroom sets.",
+          "image": "https://example.com/bedroom_sets.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Beauty & Personal Care",
+      "description": "Look and feel your best with our beauty products.",
+      "image": "https://example.com/beauty_personal_care.jpg",
+      "id": 8,
+      "products": [
+        {
+          "id": 122,
+          "name": "Skincare",
+          "description": "Achieve healthy and radiant skin with our skincare products.",
+          "image": "https://example.com/skincare.jpg"
+        },
+        {
+          "id": 123,
+          "name": "Haircare",
+          "description": "Maintain luscious locks with our haircare solutions.",
+          "image": "https://example.com/haircare.jpg"
+        },
+        {
+          "id": 124,
+          "name": "Makeup",
+          "description": "Enhance your natural beauty with our makeup collection.",
+          "image": "https://example.com/makeup.jpg"
+        }
+      ]
     }
   ]
 }

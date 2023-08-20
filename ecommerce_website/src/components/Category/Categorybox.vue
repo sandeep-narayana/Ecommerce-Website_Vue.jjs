@@ -20,7 +20,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style >
 .card {
   /* Your existing card styles */
 

@@ -11,7 +11,7 @@
       </div>
       <div class="row">
         <div
-          v-for="category in categoryData"
+          v-for="category in categoreis"
           :key="category.id"
           class="col-xl-3 col-md-4 col-12 pt-3 d-flex"
         >
@@ -23,27 +23,14 @@
 </template>
 
 <script>
-import axios from "axios";
+// import axios from "axios";
 import Categorybox from "./Categorybox.vue";
 
 export default {
   name: "CategoryComponent",
-  data() {
-    return {
-      categoryData: [],
-    };
-  },
-  methods: {},
-  async mounted() {
-    var categories = await axios.get("http://localhost:3000/category");
-    this.categoryData = categories.data;
-  },
   components: {
     Categorybox,
   },
+  props:["categoreis"]
 };
 </script>
-
-<style scoped>
-/* Add any custom styles for the CategoryComponent here */
-</style>
