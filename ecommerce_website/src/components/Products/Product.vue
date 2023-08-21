@@ -1,7 +1,12 @@
 <template>
   <div class="container">
     <dir class="row">
-      <h4>Our Products</h4>
+      <div class="col-12 text-center">
+        <h3 class="pt-3">Our Products</h3>
+        <router-link :to="{ name: 'AddProduct' }"
+          ><button class="btn btn-primary">Add products</button>
+        </router-link>
+      </div>
       <dir class="row">
         <div
           v-for="product in products"
