@@ -23,7 +23,6 @@
 </template>
 
 <script>
-// import axios from "axios";
 import Categorybox from "./Categorybox.vue";
 
 export default {

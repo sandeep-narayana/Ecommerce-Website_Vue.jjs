@@ -1,4 +1,5 @@
 <template>
+
   <div class="card w-100 h-100">
     <div class="card-img-container">
       <img class="card-img-top" :src="categoryData.image" alt="" />
