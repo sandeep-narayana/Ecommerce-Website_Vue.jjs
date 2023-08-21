@@ -1,11 +1,11 @@
 import Home from "./components/Home.vue";
-import About from "./components/About.vue"
-import AddCategory from "./components/Category/AddCategory.vue"
-import CategoryComponent from "./components/Category/Category.vue"
-import AdminComponent from "./components/Admin.vue"
-import ProductComponent from "./components/Products/Product.vue"
-import AddProduct from "./components/Products/AddProduct.vue"
-
+import About from "./components/About.vue";
+import AddCategory from "./components/Category/AddCategory.vue";
+import CategoryComponent from "./components/Category/Category.vue";
+import AdminComponent from "./components/Admin.vue";
+import ProductComponent from "./components/Products/Product.vue";
+import AddProduct from "./components/Products/AddProduct.vue";
+import EditCategory from "./components/Category/EditCategory.vue"
 
 import { createRouter, createWebHistory } from "vue-router";
 
@@ -36,15 +36,20 @@ const routes = [
     path: "/admin",
   },
   {
-    name:"ProductComponent",
-    component:ProductComponent,
-    path:"/admin/product"
-  },{
-    name:"AddProduct",
-    component:AddProduct,
-    path:"/admin/product/add"
-  }
-  
+    name: "ProductComponent",
+    component: ProductComponent,
+    path: "/admin/product",
+  },
+  {
+    name: "AddProduct",
+    component: AddProduct,
+    path: "/admin/product/add",
+  },
+  {
+    name: "EditCategory",
+    component: EditCategory,
+    path: "/admin/category/edit/:categoryId",
+  },
 ];
 
 const router = createRouter({

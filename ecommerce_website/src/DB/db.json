@@ -126,7 +126,7 @@
       ]
     },
     {
-      "name": "Toys & Games",
+      "name": "Toys & Game",
       "description": "Keep kids entertained with fun toys and games.",
       "image": "https://example.com/toys_games.jpg",
       "id": 6,
@@ -239,7 +239,7 @@
       ]
     },
     {
-      "name": "Electronics",
+      "name": "Electronics Items",
       "description": "Browse a wide range of electronic products.",
       "image": "https://img.freepik.com/premium-vector/gadgets-electronic-large-set_146957-836.jpg?w=1060",
       "id": 1,

@@ -8,7 +8,7 @@
       <p class="card-text">{{ categoryData.description }}</p>
     </div>
     <div class="card-footer">
-      <router-link to="/admin/product/add">Edit</router-link>
+     <router-link :to="{ name: 'EditCategory', params: { categoryId: categoryData.id } }">Edit</router-link>
     </div>
   </div>
 </template>
