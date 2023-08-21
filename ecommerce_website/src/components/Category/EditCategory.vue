@@ -85,7 +85,8 @@ export default {
           showConfirmButton: false,
           timer: 1500, // Auto close after 1.5 seconds
         });
-
+        //emit call the method in app.vue which will fetch again
+        this.$emit("fetchData")
         // Reload the page
         this.$router.push("/admin/category");
       } else {
