@@ -1,32 +1,6 @@
 {
   "category": [
     {
-      "name": "Electronics",
-      "description": "Browse a wide range of electronic products.",
-      "image": "https://img.freepik.com/premium-vector/gadgets-electronic-large-set_146957-836.jpg?w=1060",
-      "id": 1,
-      "products": [
-        {
-          "id": 101,
-          "name": "Smartphone",
-          "description": "Stay connected with the latest smartphones.",
-          "image": "https://img5.gadgetsnow.com/gd/images/products/additional/large/G390846_View_1/mobiles/smartphones/apple-iphone-14-pro-1-tb-deep-purple-6-gb-ram-.jpg"
-        },
-        {
-          "id": 102,
-          "name": "Laptop",
-          "description": "Enhance productivity with powerful laptops.",
-          "image": "https://example.com/laptop.jpg"
-        },
-        {
-          "id": 103,
-          "name": "Headphones",
-          "description": "Enjoy crystal-clear audio with premium headphones.",
-          "image": "https://example.com/headphones.jpg"
-        }
-      ]
-    },
-    {
       "name": "Furniture",
       "description": "Furnish your home with stylish and functional furniture.",
       "image": "https://example.com/furniture.jpg",
@@ -261,6 +235,39 @@
           "description": "",
           "price": "",
           "id": 117
+        }
+      ]
+    },
+    {
+      "name": "Electronics",
+      "description": "Browse a wide range of electronic products.",
+      "image": "https://img.freepik.com/premium-vector/gadgets-electronic-large-set_146957-836.jpg?w=1060",
+      "id": 1,
+      "products": [
+        {
+          "id": 101,
+          "name": "Smartphone",
+          "description": "Stay connected with the latest smartphones.",
+          "image": "https://img5.gadgetsnow.com/gd/images/products/additional/large/G390846_View_1/mobiles/smartphones/apple-iphone-14-pro-1-tb-deep-purple-6-gb-ram-.jpg"
+        },
+        {
+          "id": 102,
+          "name": "Laptop",
+          "description": "Enhance productivity with powerful laptops.",
+          "image": "https://example.com/laptop.jpg"
+        },
+        {
+          "id": 103,
+          "name": "Headphones",
+          "description": "Enjoy crystal-clear audio with premium headphones.",
+          "image": "https://example.com/headphones.jpg"
+        },
+        {
+          "name": "asd",
+          "image": "asd",
+          "description": "asd",
+          "price": "asd",
+          "id": 104
         }
       ]
     }

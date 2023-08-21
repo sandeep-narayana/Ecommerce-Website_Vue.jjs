@@ -1,7 +1,9 @@
 <template>
   <router-link to="/">Home</router-link>
   <router-link to="/About">About</router-link>
+  <!-- first let the fetch work and then only send the category and product -->
   <router-view
+    v-if="categoreis && products"
     :baseUrl="baseUrl"
     :categoreis="categoreis"
     :products="products"
@@ -16,8 +18,8 @@ export default {
   data() {
     return {
       baseUrl: "http://localhost:3000/",
-      products: [],
-      categoreis: [],
+      products: null,
+      categoreis: null,
     };
   },
   methods: {

@@ -8,7 +8,7 @@
       <p class="card-text">{{ categoryData.description }}</p>
     </div>
     <div class="card-footer">
-      <a href="#" class="btn btn-primary stretched-link">Learn More</a>
+      <router-link to="/admin/product/add">Edit</router-link>
     </div>
   </div>
 </template>
