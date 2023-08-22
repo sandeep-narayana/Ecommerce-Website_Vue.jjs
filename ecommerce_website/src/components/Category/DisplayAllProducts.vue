@@ -1,18 +1,15 @@
 <template>
-  <h1>Hello i am all the products</h1>
   <div class="container">
     <dir class="row">
       <div class="col-12 text-center">
-        <h3 class="pt-3">Our Products</h3>
-        <router-link :to="{ name: 'AddProduct' }"
-          ><button class="btn btn-primary">Add products</button>
-        </router-link>
+        <h3 class="pt-3">{{ category.name }}</h3>
+        <h5 style="font-weight: 300; color: #686868;" >{{ msg }}</h5>
       </div>
       <dir class="row">
         <div
-          v-for="product in this.products"
+          v-for="product in this.category.products"
           :key="product.id"
-          class="col-xl-3 col-md-4 col-12 pt-3 d-flex"
+          class="col-xl-4 col-md-6 col-12 pt-3 d-flex"
         >
           <ProductBox :product="product" />
         </div>
@@ -27,7 +24,8 @@ export default {
   name: "DisplayProducts",
   data() {
     return {
-      products: [],
+      category: {},
+      msg: "",
     };
   },
   components: {
@@ -36,9 +34,17 @@ export default {
   props: ["categoreis"],
   mounted() {
     this.id = this.$route.params.id;
-    const category = this.categoreis.find((category) => category.id === parseInt(this.id));
-    this.products = category.products;
-  
+    this.category = this.categoreis.find(
+      (category) => category.id === parseInt(this.id)
+    );
+
+    if(this.category.products.length===0){
+        this.msg="No Product Found";
+    }else if(this.category.products.length===1){
+        this.msg="Only 1 Product Found" ;
+    }else{
+        this.msg= this.category.products.length+" Products Found" ;
+    }
   },
 };
 </script>
