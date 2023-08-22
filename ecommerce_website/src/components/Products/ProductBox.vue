@@ -13,7 +13,7 @@
       <p class="card-text">{{ product.description }}</p>
     </div>
     <div class="card-footer">
-      <a href="#" class="btn btn-primary stretched-link">Learn More</a>
+      <a v-show="$route.name === 'ProductComponent'" href="#" class="btn btn-primary stretched-link">Learn More</a>
     </div>
   </div>
 </template>

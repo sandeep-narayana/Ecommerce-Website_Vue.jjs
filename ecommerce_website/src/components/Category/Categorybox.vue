@@ -1,15 +1,21 @@
 <template>
-
   <div class="card w-100 h-100">
     <div class="card-img-container">
       <img class="card-img-top" :src="categoryData.image" alt="" />
     </div>
     <div class="card-body">
-      <h5 class="card-title">{{ categoryData.name }}</h5>
+      <router-link :to="{ name: 'DisplayProducts', params: {id: categoryData.id}}">
+        <h5 class="card-title">{{ categoryData.name }}</h5>
+      </router-link>
+
       <p class="card-text">{{ categoryData.description }}</p>
     </div>
     <div class="card-footer">
-    <router-link :to="{ name: 'EditCategory', params: { categoryId: categoryData.id } }"  v-show="$route.name === 'CategoryComponent'">Edit</router-link>
+      <router-link
+        :to="{ name: 'EditCategory', params: { categoryId: categoryData.id } }"
+        v-show="$route.name === 'CategoryComponent'"
+        >Edit</router-link
+      >
     </div>
   </div>
 </template>

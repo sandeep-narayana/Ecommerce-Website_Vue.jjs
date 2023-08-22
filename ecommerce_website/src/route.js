@@ -7,6 +7,7 @@ import ProductComponent from "./components/Products/Product.vue";
 import AddProduct from "./components/Products/AddProduct.vue";
 import EditCategory from "./components/Category/EditCategory.vue"
 import ProductDetails from "./components/Products/ProductDetails.vue"
+import DisplayProducts from "./components/Category/DisplayAllProducts.vue"
 
 
 import { createRouter, createWebHistory } from "vue-router";
@@ -57,6 +58,12 @@ const routes = [
     name:"ProductDetails",
     component:ProductDetails,
     path:"/product/show/:id"
+  },
+  // show all the products of a category
+  {
+    name:"DisplayProducts",
+    component:DisplayProducts,
+    path:"/category/show/:id"
   }
 ];
 
