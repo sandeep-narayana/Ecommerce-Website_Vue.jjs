@@ -9,7 +9,7 @@
       <p class="card-text">{{ categoryData.description }}</p>
     </div>
     <div class="card-footer">
-     <router-link :to="{ name: 'EditCategory', params: { categoryId: categoryData.id } }"  v-show="$router.name=='CategoryComponent'">Edit</router-link>
+    <router-link :to="{ name: 'EditCategory', params: { categoryId: categoryData.id } }"  v-show="$route.name === 'CategoryComponent'">Edit</router-link>
     </div>
   </div>
 </template>
