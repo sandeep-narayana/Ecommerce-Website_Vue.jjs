@@ -4,7 +4,12 @@
       <img class="card-img-top" :src="product.image" alt="" />
     </div>
     <div class="card-body">
-      <h5 class="card-title">{{ product.name }}</h5>
+
+<router-link :to="{name:'ProductDetails', params:{id:product.id}}">
+    <h5 class="card-title">{{ product.name }}</h5>
+</router-link>
+
+  
       <p class="card-text">{{ product.description }}</p>
     </div>
     <div class="card-footer">

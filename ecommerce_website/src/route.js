@@ -6,6 +6,7 @@ import AdminComponent from "./components/Admin.vue";
 import ProductComponent from "./components/Products/Product.vue";
 import AddProduct from "./components/Products/AddProduct.vue";
 import EditCategory from "./components/Category/EditCategory.vue"
+import ProductDetails from "./components/Products/ProductDetails.vue"
 
 
 import { createRouter, createWebHistory } from "vue-router";
@@ -51,6 +52,12 @@ const routes = [
     component: EditCategory,
     path: "/admin/category/edit/:categoryId",
   },
+  // show details of product
+  {
+    name:"ProductDetails",
+    component:ProductDetails,
+    path:"/product/show/:id"
+  }
 ];
 
 const router = createRouter({

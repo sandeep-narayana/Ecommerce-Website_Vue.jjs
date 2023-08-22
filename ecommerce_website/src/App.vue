@@ -3,7 +3,7 @@
   <router-link to="/About">About</router-link>
   <!-- first let the fetch work and then only send the category and product -->
   <router-view
-    v-if="categoreis && products"
+    v-if="categoreis && products" style="min-height: 60vh"
     :baseUrl="baseUrl"
     :categoreis="categoreis"
     :products="products"
