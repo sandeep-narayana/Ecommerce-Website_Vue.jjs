@@ -9,13 +9,18 @@
     :products="products"
     @fetchData="fetchData"
   />
+  <!-- put a footer below router view so it will be visible to all the pages -->
+  <FooterComponent/>
 </template>
 
 <script>
 import axios from "axios";
+import FooterComponent from "./components/Footer.vue"
 export default {
   name: "App",
-  components: {},
+  components: {
+    FooterComponent
+  },
   data() {
     return {
       baseUrl: "http://localhost:3000/",

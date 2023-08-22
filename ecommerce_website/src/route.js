@@ -7,6 +7,7 @@ import ProductComponent from "./components/Products/Product.vue";
 import AddProduct from "./components/Products/AddProduct.vue";
 import EditCategory from "./components/Category/EditCategory.vue"
 
+
 import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
