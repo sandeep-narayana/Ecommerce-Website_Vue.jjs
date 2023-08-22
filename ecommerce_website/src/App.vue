@@ -1,6 +1,5 @@
 <template>
-  <router-link to="/">Home</router-link>
-  <router-link to="/About">About</router-link>
+<Navbar/>
   <!-- first let the fetch work and then only send the category and product -->
   <router-view
     v-if="categoreis && products" style="min-height: 60vh"
@@ -16,10 +15,12 @@
 <script>
 import axios from "axios";
 import FooterComponent from "./components/Footer.vue"
+import Navbar from "./components/Navbar.vue"
 export default {
   name: "App",
   components: {
-    FooterComponent
+    FooterComponent,
+    Navbar
   },
   data() {
     return {
