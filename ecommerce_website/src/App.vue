@@ -7,6 +7,7 @@
     :baseUrl="baseUrl"
     :categoreis="categoreis"
     :products="products"
+    :user="user"
     @fetchData="fetchData"
     @updateUser="updateUser"
   />

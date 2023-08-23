@@ -5,12 +5,12 @@ import CategoryComponent from "./components/Category/Category.vue";
 import AdminComponent from "./components/Admin.vue";
 import ProductComponent from "./components/Products/Product.vue";
 import AddProduct from "./components/Products/AddProduct.vue";
-import EditCategory from "./components/Category/EditCategory.vue"
-import ProductDetails from "./components/Products/ProductDetails.vue"
-import DisplayProducts from "./components/Category/DisplayAllProducts.vue"
-import SignUp from "./components/SignUp.vue"
-import SignIn from "./components/SignIn.vue"
-
+import EditCategory from "./components/Category/EditCategory.vue";
+import ProductDetails from "./components/Products/ProductDetails.vue";
+import DisplayProducts from "./components/Category/DisplayAllProducts.vue";
+import SignUp from "./components/SignUp.vue";
+import SignIn from "./components/SignIn.vue";
+import WishList from "./components/WishList.vue"
 
 import { createRouter, createWebHistory } from "vue-router";
 
@@ -57,28 +57,34 @@ const routes = [
   },
   // show details of product
   {
-    name:"ProductDetails",
-    component:ProductDetails,
-    path:"/product/show/:id"
+    name: "ProductDetails",
+    component: ProductDetails,
+    path: "/product/show/:id",
   },
   // show all the products of a category
   {
-    name:"DisplayProducts",
-    component:DisplayProducts,
-    path:"/category/show/:id"
+    name: "DisplayProducts",
+    component: DisplayProducts,
+    path: "/category/show/:id",
   },
   // sign-Up
   {
-    name:"SignUp",
+    name: "SignUp",
     component: SignUp,
-    path:"/sign-up"
+    path: "/sign-up",
   },
   // SignIn
   {
-    name:"SignIn",
+    name: "SignIn",
     component: SignIn,
-    path:"/sign-in"
-  }
+    path: "/sign-in",
+  },
+  //wishList
+  {
+    name: "WishList",
+    component: WishList,
+    path: "/user/wish-list",
+  },
 ];
 
 const router = createRouter({
