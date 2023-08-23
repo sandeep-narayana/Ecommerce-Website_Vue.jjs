@@ -115,7 +115,6 @@ export default {
             title: "Invalid Category",
             text: "Category not found",
           });
-          console.log(this.categoryid);
           return;
         }
 

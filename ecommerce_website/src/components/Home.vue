@@ -38,7 +38,7 @@
         </div>
       </div>
       <!-- // show Category cards -->
-      <dir class="row">
+      <div class="row">
         <div
           v-for="index in productSize"
           :key="index"
@@ -46,7 +46,7 @@
         >
           <ProductBox :product="products[index]" />
         </div>
-      </dir>
+      </div>
     </div>
   </div>
 </template>

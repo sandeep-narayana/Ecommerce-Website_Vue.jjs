@@ -1,11 +1,11 @@
 <template>
   <div class="container">
-    <dir class="row">
+    <div class="row">
       <div class="col-12 text-center">
         <h3 class="pt-3">{{ category.name }}</h3>
         <h5 style="font-weight: 300; color: #686868;" >{{ msg }}</h5>
       </div>
-      <dir class="row">
+      <div class="row">
         <div
           v-for="product in this.category.products"
           :key="product.id"
@@ -13,8 +13,8 @@
         >
           <ProductBox :product="product" />
         </div>
-      </dir>
-    </dir>
+      </div>
+    </div>
   </div>
 </template>
 

@@ -10,7 +10,7 @@
       <div class="col-12 text-centre pt-3">
         <div id="signup-div" class="flex-item-border">
           <h2 class="pt-4 pl-4">Sign In</h2>
-          <form class="pt-4 pl-4 pr-4" @submit.prevent="SignIn()">
+          <form class="pt-4 pl-4 pr-4" @submit.prevent="SignIn">
             <div class="form-group">
               <!-- Email -->
               <label for="Email">Email</label>

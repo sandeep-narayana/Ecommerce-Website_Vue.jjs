@@ -2,7 +2,8 @@
   <Navbar :user="user" />
   <!-- first let the fetch work and then only send the category and product -->
   <router-view
-    v-if="categoreis && products" style="min-height: 60vh"
+    v-if="categoreis && products"
+    style="min-height: 60vh"
     :baseUrl="baseUrl"
     :categoreis="categoreis"
     :products="products"
@@ -10,18 +11,18 @@
     @updateUser="updateUser"
   />
   <!-- put a footer below router view so it will be visible to all the pages -->
-  <FooterComponent/>
+  <FooterComponent />
 </template>
 
 <script>
 import axios from "axios";
-import FooterComponent from "./components/Footer.vue"
-import Navbar from "./components/Navbar.vue"
+import FooterComponent from "./components/Footer.vue";
+import Navbar from "./components/Navbar.vue";
 export default {
   name: "App",
   components: {
     FooterComponent,
-    Navbar
+    Navbar,
   },
   data() {
     return {
@@ -36,23 +37,17 @@ export default {
       try {
         var res = await axios.get(this.baseUrl + "category");
         this.categoreis = res.data;
-        console.log(this.categoreis);
 
         // Collect all products from categories
         this.products = this.categoreis
           .map((category) => category.products)
           .flat();
-        // or use flatMap directly
-        // this.products = this.categoreis.flatMap(category => category.products);
-
-        console.log(this.products);
       } catch (error) {
         console.log(error);
       }
     },
     updateUser() {
       this.user = JSON.parse(localStorage.getItem("User-Info"))[0];
-      console.log("User", this.user);
     },
   },
   mounted() {
