@@ -52,13 +52,13 @@
               <div class="dropdown-divider"></div>
               <a
                 class="dropdown-item"
-                href="/login"
+                href=""
                 @click="handleOptionClick('Login')"
                 >Login</a
               >
               <a
                 class="dropdown-item"
-                href="/signup"
+                href=""
                 @click="handleOptionClick('Signup')"
                 >Signup</a
               >
@@ -84,12 +84,11 @@ export default {
     },
     handleOptionClick(option) {
       // Handle the click on dropdown options here
-
-      alert(`Clicked on ${option}`);
       if (option === "Signup") {
-        this.$router.push("Signup"); // Use $router instead of $route
+        this.$router.push("sign-up"); 
+      }else if(option === "Login"){
+        this.$router.push("sign-in")
       }
-      // You can implement specific functionality for each option
     },
   },
 };

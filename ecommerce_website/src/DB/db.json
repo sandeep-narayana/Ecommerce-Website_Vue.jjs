@@ -271,5 +271,21 @@
         }
       ]
     }
+  ],
+  "users": [
+    {
+      "firstName": "sandeep",
+      "lastName": "rawat",
+      "email": "sa@gmail.com",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "firstName": "Sandeep",
+      "lastName": "Rawat",
+      "email": "sandeep@gmail.com",
+      "password": "1234",
+      "id": 2
+    }
   ]
 }

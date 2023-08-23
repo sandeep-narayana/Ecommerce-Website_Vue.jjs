@@ -9,6 +9,7 @@ import EditCategory from "./components/Category/EditCategory.vue"
 import ProductDetails from "./components/Products/ProductDetails.vue"
 import DisplayProducts from "./components/Category/DisplayAllProducts.vue"
 import SignUp from "./components/SignUp.vue"
+import SignIn from "./components/SignIn.vue"
 
 
 import { createRouter, createWebHistory } from "vue-router";
@@ -70,7 +71,13 @@ const routes = [
   {
     name:"SignUp",
     component: SignUp,
-    path:"/Signup"
+    path:"/sign-up"
+  },
+  // SignIn
+  {
+    name:"SignIn",
+    component: SignIn,
+    path:"/sign-in"
   }
 ];
 
