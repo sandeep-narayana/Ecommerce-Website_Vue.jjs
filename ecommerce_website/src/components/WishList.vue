@@ -30,7 +30,7 @@ export default {
   async mounted() {
     var wishlist = await axios.get(`http://localhost:3000/wish_list`, {
       params: {
-        userid: this.user.id,
+        user_id: this.user.id,
       },
     });
     this.Products = wishlist.data;
