@@ -66,6 +66,7 @@ export default {
       
       if (user.status === 200 && user.data.length > 0) {
         localStorage.setItem("User-Info", JSON.stringify(user.data));
+        this.$emit("updateUser")
         this.$router.push("/");
       } else {
         sweetAlert.fire({

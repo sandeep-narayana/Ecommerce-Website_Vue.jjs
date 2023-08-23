@@ -286,6 +286,27 @@
       "email": "sandeep@gmail.com",
       "password": "1234",
       "id": 2
+    },
+    {
+      "firstName": "admin",
+      "lastName": "asmin",
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 3
+    },
+    {
+      "firstName": "ewfg",
+      "lastName": "sdfegh",
+      "email": "1@gmail.com",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "firstName": "1",
+      "lastName": "1",
+      "email": "1@gmail.com",
+      "password": "1",
+      "id": 5
     }
   ]
 }

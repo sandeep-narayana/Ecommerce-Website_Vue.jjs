@@ -1,5 +1,5 @@
 <template>
-<Navbar/>
+  <Navbar :user="user" />
   <!-- first let the fetch work and then only send the category and product -->
   <router-view
     v-if="categoreis && products" style="min-height: 60vh"
@@ -7,6 +7,7 @@
     :categoreis="categoreis"
     :products="products"
     @fetchData="fetchData"
+    @updateUser="updateUser"
   />
   <!-- put a footer below router view so it will be visible to all the pages -->
   <FooterComponent/>
@@ -27,6 +28,7 @@ export default {
       baseUrl: "http://localhost:3000/",
       products: null,
       categoreis: null,
+      user: null,
     };
   },
   methods: {
@@ -47,13 +49,16 @@ export default {
       } catch (error) {
         console.log(error);
       }
-
-      // change the url
+    },
+    updateUser() {
+      this.user = JSON.parse(localStorage.getItem("User-Info"))[0];
+      console.log("User", this.user);
     },
   },
   mounted() {
     //mount data on page load
     this.fetchData();
+    this.updateUser();
   },
 };
 </script>

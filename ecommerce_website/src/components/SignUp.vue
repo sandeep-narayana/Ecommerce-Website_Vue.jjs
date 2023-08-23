@@ -105,15 +105,18 @@ export default {
         // save the data in db.json
         var user = await axios.post("http://localhost:3000/users", this.user);
         if (user.status === 201) {
-          // for showing a user logged in we are using local storage
-          localStorage.setItem("User-Info", JSON.stringify(user.data));
-          // redirect to home page
-          this.$router.push({ name: "Home" });
+          sweetAlert.fire({
+            icon: "Success",
+            title: "Sign-Up Successful",
+            text: "Please login using the credentials",
+          });
+          // redirect to Login page
+          this.$router.push({ name: "SignIn" });
         } else {
           sweetAlert.fire({
             icon: "error",
             title: "Sign-Up Failed",
-            text: "Something went wrong please try again after sometime"
+            text: "Something went wrong please try again after sometime",
           });
           return;
         }

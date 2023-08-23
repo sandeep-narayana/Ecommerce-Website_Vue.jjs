@@ -30,7 +30,7 @@
               role="button"
               @click="toggleDropdown"
             >
-            {{ loggedInUser[0].firstName }} {{ loggedInUser[0].lastName }}
+              {{ loggedInUser.firstName }} {{ loggedInUser.lastName }}
             </a>
             <div
               class="dropdown-menu"
@@ -91,19 +91,18 @@
 <script>
 export default {
   name: "NavbarComponent",
+  props: ["user"],
   data() {
     return {
       isDropdownOpen: false,
       loggedInUser: null,
     };
   },
-  mounted() {
-    // Check if the user is logged in on component creation
-    const userInfo = localStorage.getItem("User-Info");
-    if (userInfo) {
-      this.loggedInUser = JSON.parse(userInfo);
-      console.log("Logged in user",userInfo)
-    }
+  watch: {
+    user(newUserData) {
+      // Update loggedInUser when the user prop changes
+      this.loggedInUser = newUserData;
+    },
   },
   methods: {
     toggleDropdown() {
