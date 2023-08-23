@@ -22,7 +22,25 @@
             <a class="nav-link" href="/about">About</a>
           </li>
           <!-- Account Dropdown -->
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown" v-if="loggedInUser">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="accountDropdown"
+              role="button"
+              @click="toggleDropdown"
+            >
+            {{ loggedInUser[0].firstName }} {{ loggedInUser[0].lastName }}
+            </a>
+            <div
+              class="dropdown-menu"
+              aria-labelledby="accountDropdown"
+              :class="{ show: isDropdownOpen }"
+            >
+              <a class="dropdown-item" href="#" @click="handleLogout">Logout</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown" v-else>
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -76,19 +94,33 @@ export default {
   data() {
     return {
       isDropdownOpen: false,
+      loggedInUser: null,
     };
+  },
+  mounted() {
+    // Check if the user is logged in on component creation
+    const userInfo = localStorage.getItem("User-Info");
+    if (userInfo) {
+      this.loggedInUser = JSON.parse(userInfo);
+      console.log("Logged in user",userInfo)
+    }
   },
   methods: {
     toggleDropdown() {
       this.isDropdownOpen = !this.isDropdownOpen;
     },
     handleOptionClick(option) {
-      // Handle the click on dropdown options here
       if (option === "Signup") {
         this.$router.push("sign-up"); 
       }else if(option === "Login"){
         this.$router.push("sign-in")
       }
+    },
+    handleLogout() {
+      // Clear user information from localStorage and refresh the page
+      localStorage.removeItem("User-Info");
+      this.loggedInUser = null;
+      this.$router.go(); // Refresh the page
     },
   },
 };
