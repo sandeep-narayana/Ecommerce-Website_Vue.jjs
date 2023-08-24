@@ -48,7 +48,9 @@ export default {
       }
     },
     updateUser() {
-      this.user = JSON.parse(localStorage.getItem("User-Info"))[0];
+      const userInfo = JSON.parse(localStorage.getItem("User-Info"));
+      if (userInfo && userInfo.length > 0) 
+      this.user = userInfo[0];
     },
   },
   mounted() {
