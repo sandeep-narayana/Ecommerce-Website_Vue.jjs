@@ -8,6 +8,7 @@
     :categoreis="categoreis"
     :products="products"
     :user="user"
+    :wishlist="wishlist"
     @fetchData="fetchData"
     @updateUser="updateUser"
   />
@@ -31,6 +32,7 @@ export default {
       products: null,
       categoreis: null,
       user: null,
+      wishlist: null,
     };
   },
   methods: {
@@ -43,14 +45,23 @@ export default {
         this.products = this.categoreis
           .map((category) => category.products)
           .flat();
+
+        // Get the wishlish or the login user so it can pass to wishlist id if not null
+        if (this.user != null) {
+          var user = await axios.get(`http://localhost:3000/users`, {
+            params: {
+              id: this.user.id,
+            },
+          });
+          this.wishlist = user.data[0].wish_list;
+        }
       } catch (error) {
         console.log(error);
       }
     },
     updateUser() {
       const userInfo = JSON.parse(localStorage.getItem("User-Info"));
-      if (userInfo && userInfo.length > 0) 
-      this.user = userInfo[0];
+      if (userInfo && userInfo.length > 0) this.user = userInfo[0];
     },
   },
   mounted() {

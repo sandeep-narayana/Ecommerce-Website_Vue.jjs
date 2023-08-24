@@ -6,7 +6,7 @@
       </div>
       <div class="row">
         <div
-          v-for="product in wishlist"
+          v-for="product in cart"
           :key="product.id"
           class="col-xl-3 col-md-4 col-12 pt-3 d-flex"
         >
@@ -19,13 +19,13 @@
 <script>
 import ProductBox from "./Products/ProductBox.vue";
 export default {
-  name: "WishList",
+  name: "CartComponet",
   data() {
     return {
       Products: null,
     };
   },
-  props: ["user", "wishlist"],
+  props: [ "user","cart"],
   components: {
     ProductBox,
   },

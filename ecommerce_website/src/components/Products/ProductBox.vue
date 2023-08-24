@@ -12,34 +12,59 @@
       <p v-if="product.count != null">{{ `Quantity: ${product.count}` }}</p>
     </div>
     <div class="card-footer" v-if="$route.name === 'ProductComponent'">
-      <a
-        
-        href="#"
-        class="btn btn-primary stretched-link"
-        >Learn More</a
-      >
+      <a href="#" class="btn btn-primary stretched-link">Learn More</a>
     </div>
-    <div  class="card-footer d-flex justify-content-between " v-if="$route.name === 'WishList'">
-      <button  class="btn  btn-primary">Add to cart</button>
-      <button class="btn   btn-danger" v-on:click="DeleteProduct()">Remove </button>
+    <div
+      class="card-footer d-flex justify-content-between"
+      v-if="$route.name === 'WishList'"
+    >
+      <button class="btn btn-primary">Add to cart</button>
+      <button class="btn btn-danger" v-on:click="DeleteProduct()">
+        Remove
+      </button>
     </div>
   </div>
 </template>
 <script>
+import axios from "axios";
 export default {
   name: "ProductBox",
   data() {
     return {};
   },
-  props: ["product"],
-  methods:{
-    async DeleteProduct(){
-      var deletedProduct = null;
-      console.log(deletedProduct)
-    }
-  }
+  props: ["product", "user"],
+  methods: {
+    async DeleteProduct() {
+      try {
+        const userId = this.user.id;
+        // Make a GET request to get the user's data including the wishlist
+        const response = await axios.get(
+          `http://localhost:3000/users/${userId}`
+        );
+
+        // Filter out the deleted product from the wishlist
+        const userDataFromDb = response.data;
+        const wishlist = userDataFromDb.wish_list;
+        const updatedWishlist = wishlist.filter(
+          (item) => item.id !== this.product.id
+        );
+
+        // Update the user's wishlist on the server
+        await axios.put(`http://localhost:3000/users/${userId}`, {
+          wish_list: updatedWishlist,
+        });
+
+        // Emit an event to notify the parent component to update its state
+        this.$emit("fetchData");
+        // reload the page
+        this.$router.go(0);
+      } catch (error) {
+        console.log(error);
+      }
+    },
+  },
 };
 </script>
-<style scoped>
 
+<style scoped>
 </style>
