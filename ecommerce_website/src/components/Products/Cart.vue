@@ -14,10 +14,11 @@
         </div>
       </div>
     </div>
+    
   </div>
 </template>
 <script>
-import ProductBox from "./Products/ProductBox.vue";
+import ProductBox from "./ProductBox.vue";
 export default {
   name: "CartComponet",
   data() {

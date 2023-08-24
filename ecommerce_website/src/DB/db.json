@@ -275,29 +275,26 @@
       "id": 1
     },
     {
-      "firstName": "Sandeep",
-      "lastName": "Rawat",
-      "email": "sandeep@gmail.com",
-      "password": "1234",
-      "id": 2,
-      "wish_list":[
+      "cart": [
         {
-        "user_id":2,
-        "id": 120,
-        "name": "Dining Tables",
-        "description": "Host gatherings with elegant dining tables.",
-        "image": "https://www.thepengu.com/cdn/shop/products/WhiteExtendableTable8SeaterView2.png?v=1629708908&width=1200",
-        "count":2
-      },
-      {
-        "user_id":2,
-        "id": 112,
-        "name": "Fitness Equipment",
-        "description": "Stay fit with a variety of fitness equipment.",
-        "image": "https://example.com/fitness_equipment.jpg",
-        "count":2
-      }
-    ]
+          "user_id": 2,
+          "id": 112,
+          "name": "Fitness Equipment",
+          "description": "Stay fit with a variety of fitness equipment.",
+          "image": "https://example.com/fitness_equipment.jpg",
+          "count": 2
+        },
+        {
+          "user_id": 2,
+          "id": 120,
+          "name": "Dining Tables",
+          "description": "Host gatherings with elegant dining tables.",
+          "image": "https://www.thepengu.com/cdn/shop/products/WhiteExtendableTable8SeaterView2.png?v=1629708908&width=1200",
+          "count": 2
+        }
+      ],
+      "wishlist": [],
+      "id": 2
     },
     {
       "firstName": "admin",
@@ -321,5 +318,4 @@
       "id": 5
     }
   ]
-
 }

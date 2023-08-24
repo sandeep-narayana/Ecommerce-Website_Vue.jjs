@@ -38,6 +38,8 @@
               :class="{ show: isDropdownOpen }"
             >
               <a class="dropdown-item" href="#" @click="handleLogout">Logout</a>
+              <router-link to="WishList" class="dropdown-item"> WishList </router-link>
+              <router-link to="Cart" class="dropdown-item"> Cart </router-link>
             </div>
           </li>
           <li class="nav-item dropdown" v-else>
@@ -110,9 +112,9 @@ export default {
     },
     handleOptionClick(option) {
       if (option === "Signup") {
-        this.$router.push("sign-up"); 
-      }else if(option === "Login"){
-        this.$router.push("sign-in")
+        this.$router.push("sign-up");
+      } else if (option === "Login") {
+        this.$router.push("sign-in");
       }
     },
     handleLogout() {
@@ -126,5 +128,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

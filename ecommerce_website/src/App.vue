@@ -9,6 +9,7 @@
     :products="products"
     :user="user"
     :wishlist="wishlist"
+    :cart="cart"
     @fetchData="fetchData"
     @updateUser="updateUser"
   />
@@ -33,6 +34,7 @@ export default {
       categoreis: null,
       user: null,
       wishlist: null,
+      cart:null,
     };
   },
   methods: {
@@ -53,7 +55,8 @@ export default {
               id: this.user.id,
             },
           });
-          this.wishlist = user.data[0].wish_list;
+          this.wishlist = user.data[0].wishlist;
+          this.cart = user.data[0].cart;
         }
       } catch (error) {
         console.log(error);

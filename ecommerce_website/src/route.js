@@ -10,7 +10,8 @@ import ProductDetails from "./components/Products/ProductDetails.vue";
 import DisplayProducts from "./components/Category/DisplayAllProducts.vue";
 import SignUp from "./components/SignUp.vue";
 import SignIn from "./components/SignIn.vue";
-import WishList from "./components/WishList.vue"
+import WishList from "./components/WishList.vue";
+import CartComponet from "./components/Products/Cart.vue";
 
 import { createRouter, createWebHistory } from "vue-router";
 
@@ -83,7 +84,13 @@ const routes = [
   {
     name: "WishList",
     component: WishList,
-    path: "/user/wish-list",
+    path: "/user/wishlist",
+  },
+  //Cart
+  {
+    name: "Cart",
+    component: CartComponet,
+    path: "/user/Cart",
   },
 ];
 
