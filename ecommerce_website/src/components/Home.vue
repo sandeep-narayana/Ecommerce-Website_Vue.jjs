@@ -61,9 +61,9 @@ export default {
       productSize:0
     };
   },
-  mounted() {
+  created() {
     this.categorySize = Math.min(6, this.categoreis.length);
-    this.productSize = Math.min(6,this.products.length);
+    this.productSize = Math.min(8, this.products.length);
   },
   components: {
     Categorybox,

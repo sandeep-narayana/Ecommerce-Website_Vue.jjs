@@ -11,13 +11,17 @@
       <p class="card-text">{{ product.description }}</p>
       <p v-if="product.count != null">{{ `Quantity: ${product.count}` }}</p>
     </div>
-    <div class="card-footer">
+    <div class="card-footer" v-if="$route.name === 'ProductComponent'">
       <a
-        v-show="$route.name === 'ProductComponent'"
+        
         href="#"
         class="btn btn-primary stretched-link"
         >Learn More</a
       >
+    </div>
+    <div  class="card-footer d-flex justify-content-between " v-if="$route.name === 'WishList'">
+      <button  class="btn  btn-primary">Add to cart</button>
+      <button class="btn   btn-danger" v-on:click="DeleteProduct()">Remove </button>
     </div>
   </div>
 </template>
@@ -28,5 +32,14 @@ export default {
     return {};
   },
   props: ["product"],
+  methods:{
+    async DeleteProduct(){
+      var deletedProduct = null;
+      console.log(deletedProduct)
+    }
+  }
 };
 </script>
+<style scoped>
+
+</style>
