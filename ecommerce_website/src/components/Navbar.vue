@@ -121,7 +121,7 @@ export default {
       // Clear user information from localStorage and refresh the page
       localStorage.removeItem("User-Info");
       this.loggedInUser = null;
-      this.$router.go(); // Refresh the page
+      this.$router.push({name:'Home'}); // Refresh the page
     },
   },
 };
