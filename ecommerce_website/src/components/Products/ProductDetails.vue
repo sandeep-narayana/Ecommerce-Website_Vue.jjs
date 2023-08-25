@@ -14,7 +14,7 @@
       <div class="col-md-6 col-12 pt-3 pt-md-0">
         <h4>{{ this.displayProduct.name }}</h4>
         <h6 class="category font-italic">{{ category.name }}</h6>
-        <h6 class="font-weight-bold">{{ displayProduct.price }} $ Price</h6>
+        <h6 class="font-weight-bold"> ₹ {{ displayProduct.price }}</h6>
         <p>{{ displayProduct.description }}</p>
         <div class="features pt-3">
           <h5><strong>Features</strong></h5>

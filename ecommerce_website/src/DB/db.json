@@ -10,19 +10,22 @@
           "id": 119,
           "name": "Sofas",
           "description": "Relax in comfort with our cozy sofas.",
-          "image": "https://example.com/sofas.jpg"
+          "image": "https://example.com/sofas.jpg",
+          "price":1800
         },
         {
           "id": 120,
           "name": "Dining Tables",
           "description": "Host gatherings with elegant dining tables.",
-          "image": "https://www.thepengu.com/cdn/shop/products/WhiteExtendableTable8SeaterView2.png?v=1629708908&width=1200"
+          "image": "https://www.thepengu.com/cdn/shop/products/WhiteExtendableTable8SeaterView2.png?v=1629708908&width=1200",
+          "price":1800
         },
         {
           "id": 121,
           "name": "Bedroom Sets",
           "description": "Create a dreamy bedroom with our bedroom sets.",
-          "image": "https://example.com/bedroom_sets.jpg"
+          "image": "https://example.com/bedroom_sets.jpg",
+          "price":1800
         }
       ]
     },
@@ -36,19 +39,22 @@
           "id": 122,
           "name": "Skincare",
           "description": "Achieve healthy and radiant skin with our skincare products.",
-          "image": "https://example.com/skincare.jpg"
+          "image": "https://example.com/skincare.jpg",
+          "price":1800
         },
         {
           "id": 123,
           "name": "Haircare",
           "description": "Maintain luscious locks with our haircare solutions.",
-          "image": "https://example.com/haircare.jpg"
+          "image": "https://example.com/haircare.jpg",
+          "price":1800
         },
         {
           "id": 124,
           "name": "Makeup",
           "description": "Enhance your natural beauty with our makeup collection.",
-          "image": "https://example.com/makeup.jpg"
+          "image": "https://example.com/makeup.jpg",
+          "price":1800
         }
       ]
     },
@@ -62,19 +68,23 @@
           "id": 104,
           "name": "Refrigerator",
           "description": "Keep your food fresh with energy-efficient refrigerators.",
-          "image": "https://example.com/refrigerator.jpg"
+          "image": "https://example.com/refrigerator.jpg",
+          "price":1800
+
         },
         {
           "id": 105,
           "name": "Washing Machine",
           "description": "Simplify laundry day with advanced washing machines.",
-          "image": "https://example.com/washing_machine.jpg"
+          "image": "https://example.com/washing_machine.jpg",
+          "price":1800
         },
         {
           "id": 106,
           "name": "Microwave Oven",
           "description": "Cook and reheat meals quickly with microwave ovens.",
-          "image": "https://example.com/microwave_oven.jpg"
+          "image": "https://example.com/microwave_oven.jpg",
+          "price":1800
         },
         {
           "name": "as",
@@ -95,33 +105,22 @@
           "id": 107,
           "name": "Dresses",
           "description": "Find the perfect dress for any occasion.",
-          "image": "https://example.com/dresses.jpg"
+          "image": "https://example.com/dresses.jpg",
+          "price":1800
         },
         {
           "id": 108,
           "name": "Shoes",
           "description": "Step out in style with fashionable shoes.",
-          "image": "https://example.com/shoes.jpg"
+          "image": "https://example.com/shoes.jpg",
+          "price":1800
         },
         {
           "id": 109,
           "name": "Handbags",
           "description": "Complete your look with designer handbags.",
-          "image": "https://example.com/handbags.jpg"
-        },
-        {
-          "name": "",
-          "image": "",
-          "description": "",
-          "price": "",
-          "id": 110
-        },
-        {
-          "name": "",
-          "image": "",
-          "description": "",
-          "price": "",
-          "id": 111
+          "image": "https://example.com/handbags.jpg",
+          "price":1800
         }
       ]
     },
@@ -135,34 +134,24 @@
           "id": 116,
           "name": "Board Games",
           "description": "Enjoy quality family time with board games.",
-          "image": "https://example.com/board_games.jpg"
+          "image": "https://example.com/board_games.jpg",
+          "price":1800
         },
         {
           "id": 117,
           "name": "Action Figures",
           "description": "Collect action figures from your favorite franchises.",
-          "image": "https://example.com/action_figures.jpg"
+          "image": "https://example.com/action_figures.jpg",
+          "price":1800
         },
         {
           "id": 118,
           "name": "Educational Toys",
           "description": "Promote learning through play with educational toys.",
-          "image": "https://example.com/educational_toys.jpg"
-        },
-        {
-          "name": "",
-          "image": "",
-          "description": "",
-          "price": "",
-          "id": 119
-        },
-        {
-          "name": "",
-          "image": "",
-          "description": "",
-          "price": "",
-          "id": 120
+          "image": "https://example.com/educational_toys.jpg",
+          "price":1800
         }
+
       ]
     },
     {
@@ -175,26 +164,22 @@
           "id": 110,
           "name": "Bicycles",
           "description": "Enjoy cycling with high-quality bicycles.",
-          "image": "https://example.com/bicycles.jpg"
+          "image": "https://example.com/bicycles.jpg",
+          "price":1800
         },
         {
           "id": 111,
           "name": "Tents",
           "description": "Camp comfortably with durable camping tents.",
-          "image": "https://example.com/tents.jpg"
+          "image": "https://example.com/tents.jpg",
+          "price":1800
         },
         {
           "id": 112,
           "name": "Fitness Equipment",
           "description": "Stay fit with a variety of fitness equipment.",
-          "image": "https://example.com/fitness_equipment.jpg"
-        },
-        {
-          "name": "",
-          "image": "",
-          "description": "",
-          "price": "",
-          "id": 113
+          "image": "https://example.com/fitness_equipment.jpg",
+          "price":1800
         }
       ]
     },
@@ -208,33 +193,22 @@
           "id": 113,
           "name": "Fiction",
           "description": "Dive into captivating fictional worlds.",
-          "image": "https://example.com/fiction.jpg"
+          "image": "https://example.com/fiction.jpg",
+          "price":1800
         },
         {
           "id": 114,
           "name": "Non-Fiction",
           "description": "Learn from informative non-fiction books.",
-          "image": "https://example.com/non_fiction.jpg"
+          "image": "https://example.com/non_fiction.jpg",
+          "price":1800
         },
         {
           "id": 115,
           "name": "Cookbooks",
           "description": "Master the culinary arts with our cookbooks.",
-          "image": "https://example.com/cookbooks.jpg"
-        },
-        {
-          "name": "wsd",
-          "image": "",
-          "description": "",
-          "price": "",
-          "id": 116
-        },
-        {
-          "name": "",
-          "image": "",
-          "description": "",
-          "price": "",
-          "id": 117
+          "image": "https://example.com/cookbooks.jpg",
+          "price":1800
         }
       ]
     },
@@ -248,20 +222,15 @@
           "id": 101,
           "name": "Smartphone",
           "description": "Stay connected with the latest smartphones.",
-          "image": "https://img5.gadgetsnow.com/gd/images/products/additional/large/G390846_View_1/mobiles/smartphones/apple-iphone-14-pro-1-tb-deep-purple-6-gb-ram-.jpg"
+          "image": "https://img5.gadgetsnow.com/gd/images/products/additional/large/G390846_View_1/mobiles/smartphones/apple-iphone-14-pro-1-tb-deep-purple-6-gb-ram-.jpg",
+          "price":1800
         },
         {
           "id": 102,
           "name": "Laptop",
           "description": "Enhance productivity with powerful laptops.",
-          "image": "https://example.com/laptop.jpg"
-        },
-        {
-          "name": "asd",
-          "image": "asd",
-          "description": "asd",
-          "price": "asd",
-          "id": 104
+          "image": "https://example.com/laptop.jpg",
+          "price":1800
         }
       ]
     }
@@ -278,13 +247,15 @@
           "id": 120,
           "name": "Dining Tables",
           "description": "Host gatherings with elegant dining tables.",
-          "image": "https://www.thepengu.com/cdn/shop/products/WhiteExtendableTable8SeaterView2.png?v=1629708908&width=1200"
+          "image": "https://www.thepengu.com/cdn/shop/products/WhiteExtendableTable8SeaterView2.png?v=1629708908&width=1200",
+          "price":1800
         },
         {
           "id": 120,
           "name": "Dining Tables",
           "description": "Host gatherings with elegant dining tables.",
-          "image": "https://www.thepengu.com/cdn/shop/products/WhiteExtendableTable8SeaterView2.png?v=1629708908&width=1200"
+          "image": "https://www.thepengu.com/cdn/shop/products/WhiteExtendableTable8SeaterView2.png?v=1629708908&width=1200",
+          "price":1800
         }
       ],
       "wishlist": [
@@ -292,18 +263,17 @@
           "id": 120,
           "name": "Dining Tables",
           "description": "Host gatherings with elegant dining tables.",
-          "image": "https://www.thepengu.com/cdn/shop/products/WhiteExtendableTable8SeaterView2.png?v=1629708908&width=1200"
+          "image": "https://www.thepengu.com/cdn/shop/products/WhiteExtendableTable8SeaterView2.png?v=1629708908&width=1200",
+          "price":1800
         },
         {
           "id": 120,
           "name": "Dining Tables",
           "description": "Host gatherings with elegant dining tables.",
-          "image": "https://www.thepengu.com/cdn/shop/products/WhiteExtendableTable8SeaterView2.png?v=1629708908&width=1200"
+          "image": "https://www.thepengu.com/cdn/shop/products/WhiteExtendableTable8SeaterView2.png?v=1629708908&width=1200",
+          "price":1800
         }
       ]
-    },
-    {
-      "id": 2
     },
     {
       "firstName": "admin",
