@@ -14,7 +14,23 @@
         </div>
       </div>
     </div>
-    
+    <!-- Display Total Amount and Price -->
+    <div class="row mt-4">
+      <div class="col-12 text-center">
+        <h4>Total Amount: ${{ getTotalAmount() }}</h4>
+      </div>
+    </div>
+
+    <!-- "Buy Now" Button -->
+    <div class="row mt-4">
+      <div class="col-12 text-center">
+        <!-- <router-link :to="{ name: 'PurchasePage', query: { cartItems: JSON.stringify(cart) } }">
+          <router-link :to="{ name: 'PurchasePage', query: { cartItems: JSON.stringify(cart) } }">
+          <button class="btn btn-primary">Buy Now</button>
+        </router-link> -->
+        <button class="btn btn-primary">Buy Now</button>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -26,10 +42,21 @@ export default {
       Products: null,
     };
   },
-  props: [ "user","cart"],
+  props: ["user", "cart"],
   components: {
     ProductBox,
   },
-  
+  methods: {
+    getTotalAmount() {
+      // var amount = 0;
+      // for (const product of this.cart) {
+      //   // add the price to it
+      //   amount =+product.count*10000
+        
+      // }
+      // return amount;
+      console.log("Hello")
+    },
+  },
 };
 </script>

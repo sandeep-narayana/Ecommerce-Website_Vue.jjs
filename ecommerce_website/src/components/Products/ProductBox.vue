@@ -9,7 +9,18 @@
       </router-link>
 
       <p class="card-text">{{ product.description }}</p>
-      <p v-if="product.count != null">{{ `Quantity: ${product.count}` }}</p>
+      <!-- Quantity Section -->
+      <div class="quantity" v-if="$route.name === 'Cart'">
+        <button @click="decreaseQuantity" class="btn btn-sm btn-secondary">
+          -
+        </button>
+        <span class="quantity-value"> {{ " " + product.count + " " }} </span>
+        <button @click="increaseQuantity" class="btn btn-sm btn-secondary">
+          +
+        </button>
+      </div>
+
+
     </div>
     <div class="card-footer" v-if="$route.name === 'ProductComponent'">
       <a href="#" class="btn btn-primary stretched-link">Learn More</a>
@@ -174,6 +185,16 @@ export default {
         console.log(error);
       }
     },
+    // increase the quantities
+    increaseQuantity() {
+      // update the database and refresh the data
+    },
+    // Decrease the quantities
+    decreaseQuantity() {
+      if (this.product.count > 1) {
+        //update the database and refresh the data
+      }
+    }
   },
 };
 </script>

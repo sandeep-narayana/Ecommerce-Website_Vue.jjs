@@ -60,7 +60,7 @@ const routes = [
   {
     name: "ProductDetails",
     component: ProductDetails,
-    path: "/product/show",
+    path: "/product/:id",
   },
   // show all the products of a category
   {
@@ -84,7 +84,7 @@ const routes = [
   {
     name: "WishList",
     component: WishList,
-    path: "/user/wishlist",
+    path: "/user/WishList",
   },
   //Cart
   {

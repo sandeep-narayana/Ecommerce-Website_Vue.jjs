@@ -34,7 +34,7 @@ export default {
       categoreis: null,
       user: null,
       wishlist: null,
-      cart:null,
+      cart:[],
     };
   },
   methods: {

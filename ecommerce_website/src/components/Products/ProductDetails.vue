@@ -14,7 +14,7 @@
         <p>{{ displayProduct.description }}</p>
         <div class="features pt-3">
           <h5><strong>Features</strong></h5>
-          <ul>
+          <ul class="list-unstyled">
             <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
             <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
             <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>

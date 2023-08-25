@@ -278,14 +278,6 @@
       "cart": [
         {
           "user_id": 2,
-          "id": 112,
-          "name": "Fitness Equipment",
-          "description": "Stay fit with a variety of fitness equipment.",
-          "image": "https://example.com/fitness_equipment.jpg",
-          "count": 2
-        },
-        {
-          "user_id": 2,
           "id": 120,
           "name": "Dining Tables",
           "description": "Host gatherings with elegant dining tables.",
@@ -293,7 +285,16 @@
           "count": 2
         }
       ],
-      "wishlist": [],
+      "wishlist": [
+        {
+          "user_id": 2,
+          "id": 112,
+          "name": "Fitness Equipment",
+          "description": "Stay fit with a variety of fitness equipment.",
+          "image": "https://example.com/fitness_equipment.jpg",
+          "count": 2
+        }
+      ],
       "id": 2
     },
     {

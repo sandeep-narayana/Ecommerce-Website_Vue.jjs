@@ -37,7 +37,7 @@
           <h2 class="pt-3">Top Products</h2>
         </div>
       </div>
-      <!-- // show Category cards -->
+      <!-- // show Product cards -->
       <div class="row">
         <div
           v-for="index in productSize"

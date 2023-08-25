@@ -38,8 +38,8 @@
               :class="{ show: isDropdownOpen }"
             >
               <a class="dropdown-item" href="#" @click="handleLogout">Logout</a>
-              <router-link to="WishList" class="dropdown-item"> WishList </router-link>
-              <router-link to="Cart" class="dropdown-item"> Cart </router-link>
+              <router-link :to="{name:`WishList`}" class="dropdown-item"> WishList </router-link>
+              <router-link :to="{name:`Cart`}" class="dropdown-item"> Cart </router-link>
             </div>
           </li>
           <li class="nav-item dropdown" v-else>
