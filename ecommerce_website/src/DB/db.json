@@ -272,29 +272,37 @@
       "lastName": "rawat",
       "email": "sa@gmail.com",
       "password": "123",
-      "id": 1
-    },
-    {
+      "id": 1,
       "cart": [
         {
-          "user_id": 2,
           "id": 120,
           "name": "Dining Tables",
           "description": "Host gatherings with elegant dining tables.",
-          "image": "https://www.thepengu.com/cdn/shop/products/WhiteExtendableTable8SeaterView2.png?v=1629708908&width=1200",
-          "count": 2
+          "image": "https://www.thepengu.com/cdn/shop/products/WhiteExtendableTable8SeaterView2.png?v=1629708908&width=1200"
+        },
+        {
+          "id": 120,
+          "name": "Dining Tables",
+          "description": "Host gatherings with elegant dining tables.",
+          "image": "https://www.thepengu.com/cdn/shop/products/WhiteExtendableTable8SeaterView2.png?v=1629708908&width=1200"
         }
       ],
       "wishlist": [
         {
-          "user_id": 2,
-          "id": 112,
-          "name": "Fitness Equipment",
-          "description": "Stay fit with a variety of fitness equipment.",
-          "image": "https://example.com/fitness_equipment.jpg",
-          "count": 2
+          "id": 120,
+          "name": "Dining Tables",
+          "description": "Host gatherings with elegant dining tables.",
+          "image": "https://www.thepengu.com/cdn/shop/products/WhiteExtendableTable8SeaterView2.png?v=1629708908&width=1200"
+        },
+        {
+          "id": 120,
+          "name": "Dining Tables",
+          "description": "Host gatherings with elegant dining tables.",
+          "image": "https://www.thepengu.com/cdn/shop/products/WhiteExtendableTable8SeaterView2.png?v=1629708908&width=1200"
         }
-      ],
+      ]
+    },
+    {
       "id": 2
     },
     {
